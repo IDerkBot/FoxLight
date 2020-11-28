@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/all.min.css"> <!-- Подключение FontAwesome 5 -->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>FoxLight</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html" class="logo">FoxLight</a>
+        <ul class="menu">
+            <li class="item-menu"><a href="/index.html" class="link-menu">Телепрограмма</a></li>
+            <li class="item-menu"><a href="/news/index.html" class="link-menu">Новости</a></li>
+            <li class="item-menu"><a href="/contacts/index.html" class="link-menu">Контакты</a></li>
+            <li class="item-menu"><a href="#" class="link-menu" id="enter">Вход</a></li>
+        </ul>
+        <div class="popup none" id="overlay">
+            <form action="" method="post">
+                <div class="btn-close" id="popup-close"><i class="fas fa-times"></i></div>
+                <h2>Вход</h2>
+                <input type="text" name="" id="" placeholder="loginoff">
+                <input type="password" name="" id="" placeholder="********">
+                <input type="submit" value="Войти">
+            </form>
+        </div>
+    </header>
+    <section>
+        <div class="title-section"><span>Контакты</span></div>
+        <div class="contacts">
+            <div class="info">
+                <span class="title">Телеканал FoxLight</span>
+                Мы вещаем на канале 763 только для России!
+                <span class="data">Наши контакты: </span>
+                <a href="mailto:foxlight@gmail.com" title="тыкни меня">foxlight@gmail.com</a>
+                <a href="tel:+7(912) 345-67-89" title="тыкни меня">+7(912) 345-67-89</a>
+                <span class="data">Мы в соц. сетях: </span>
+                <ul class="soc">
+                    <li><a href="" class="tg"><i class="fab fa-telegram-plane"></i></a></li>
+                    <li><a href="" class="vk"><i class="fab fa-vk"></i></a></li>
+                    <li><a href="" class="fb"><i class="fab fa-facebook"></i></a></li>
+                </ul>
+            </div>
+            <form class="feedback" method="POST" action="">
+                <div>
+                    <label>
+                        Имя:
+                        <input type="text" name="" placeholder="Иван">
+                    </label>
+                    <label>
+                        Почта:
+                        <input type="text" name="" placeholder="ivanov@gmail.com">
+                    </label>
+                </div>
+                <label>
+                    Сообщение:
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Ваше сообщение..."></textarea>
+                </label>
+                
+                <input class="btn" type="submit" value="Отправить">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div>&copy; Буданов Иван - 2020</div>
+    </footer>
+    <script src="/js/main.js"></script>
+</body>
+</html>
