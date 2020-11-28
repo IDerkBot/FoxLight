@@ -54,19 +54,20 @@ ul.menu{
     display: flex;
     align-items: center;
     list-style: none;
-    font-size: 24px;
+    font-size: 18px;
 }
 li.item-menu:not(:last-child){
     margin-right: 100px;
-}
-li.item-menu{
-    font-size: 18px;
 }
 a.link-menu{
     text-decoration: none;
     color: #fff;
 }
 /* КОНЕЦ МЕНЮ ШАПКИ */
+#burger{
+    display: none;
+    cursor: pointer;
+}
 /* ВСПЛЫВАЮЩЕЕ ОКНО - ВХОД */
 .popup{
     position: absolute;
@@ -437,6 +438,32 @@ span.data{
     background-color: #e7e7e7;
     box-shadow: 0 0 10px #000 inset;
 }
+/* ПАНЕЛЬ УПРАВЛЕНИЯ */
+.admin-menu{
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 100px 15%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.item-admin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    width: 330px;
+    height: 50px;
+    border-radius: 5px;
+}
+.link-admin{
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 /* ПОДВАЛ */
 footer{
     width: 100%;
@@ -462,4 +489,172 @@ footer{
 }
 #btn-up.done{
     display: none;
+}
+@media screen and (max-width: 1440px){
+    header,
+    header.tv-header,
+    .programs,
+    .day-line,
+    .news{
+        padding: 0 10%;
+    }
+
+    ul.menu{
+        font-size: 16px;
+    }
+    .intro-title{
+        font-size: 100px;
+    }
+    .intro-time{
+        font-size: 36px;
+        width: 400px;
+    }
+    .title-section{
+        height: 150px;
+        font-size: 36px;
+    }
+    .tiding{
+        width: 350px;
+    }
+    .tiding img{
+        width: 330px;
+        height: 330px;
+    }
+    .tiding .description{
+        font-size: 16px;
+    }
+    .admin-menu{
+        flex-direction: column;
+    }
+    .item-admin{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 1024px){
+    li.item-menu:not(:last-child){
+        margin-right: 50px;
+    }
+}
+@media screen and (max-width: 768px){
+    header,
+    header.tv-header,
+    .programs,
+    .day-line,
+    .news{
+        padding: 0 5%;
+    }
+    .contacts{
+        margin: 100px 5%;
+    }
+    /* BURGER */
+    #burger{
+        display: block;
+        z-index: 999;
+    }
+    ul.menu{
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.918);
+        top: 0;
+        left: 0;
+        z-index: 150;
+    }
+    li.item-menu:not(:last-child){
+        margin: 0;
+    }
+    li.item-menu{
+        line-height: 2.5;
+    }
+    .menu-none{
+        visibility: hidden;
+    }
+    .program .title{
+        font-size: 36px;
+        height: 40px;
+        top: 58px;
+        left: calc(25px + 30px);
+    }
+    .tiding{
+        width: 100%;
+    }
+    .tiding img{
+        width: 100%;
+    }
+    .contacts{
+        flex-direction: column;
+    }
+    .info,
+    .feedback{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 425px){
+    .days{
+        font-size: 14px;
+        text-align: center;
+    }
+    .program{
+        height: 100px;
+    }
+    .program .time{
+        font-size: 24px;
+        left: 10px;
+        width: 30px;
+    }
+    .program .title{
+        font-size: 24px;
+        height: 28px;
+        top: 40px;
+        left: 12px;
+        max-width: 63%;
+    }
+    .program .seria{
+        font-size: 24px;
+        word-wrap: normal;
+        width: 35px;
+        height: 50px;
+        right: 10px;
+    }
+    .program .seria:after{
+        font-size: 10px;
+        word-wrap: normal;
+        top: 12px;
+        left: -30px;
+    }
+    .program .type{
+        font-size: 18px;
+        top: 43px;
+        right: 10px;
+    }
+    .feedback>div{
+        flex-direction: column;
+    }
+    .feedback>div label{
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width: 375px){
+    .intro-title{
+        font-size: 72px;
+    }
+    .intro-time{
+        max-width: 400px;
+        width: 90%;
+        font-size: 36px;
+    }
+    .program .title{
+        max-width: 63%;
+    }
+}
+@media screen and (max-width: 320px){
+    .program .title{
+        max-width: 53%;
+        padding: 1px 2px;
+    }
 }
