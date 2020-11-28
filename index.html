@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1920, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/all.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>FoxLight</title>
 </head>
@@ -14,15 +15,35 @@
                 <li class="item-menu"><a href="/index.html" class="link-menu">Телепрограмма</a></li>
                 <li class="item-menu"><a href="/news/index.html" class="link-menu">Новости</a></li>
                 <li class="item-menu"><a href="/contacts/index.html" class="link-menu">Контакты</a></li>
-                <li class="item-menu"><a href="/admin/index.html" class="link-menu">Вход</a></li>
+                <li class="item-menu"><a href="#" class="link-menu" id="enter">Вход</a></li>
             </ul>
+            <div class="popup none" id="overlay">
+                <form action="" method="post">
+                    <div class="btn-close" id="popup-close"><i class="fas fa-times"></i></div>
+                    <h2>Вход</h2>
+                    <input type="text" name="" id="" placeholder="loginoff">
+                    <input type="password" name="" id="" placeholder="********">
+                    <input type="submit" value="Войти">
+                </form>
+            </div>
         </header>
         <h2 class="intro-title">Akira</h2>
         <div class="intro-time">21:00-21:30</div>
     </section>
     <section>
         <div class="title-section"><span>Телепрограмма</span></div>
-        <div class="day-line">25 ноября</div>
+        <div class="day-line">
+            <div id="control-left"><i class="fas fa-chevron-left"></i></div>
+            <div class="days">
+                <a href="#" class="day now">25 ноября</a>
+                <a href="#" class="day">26 ноября</a>
+                <a href="#" class="day">27 ноября</a>
+                <a href="#" class="day">28 ноября</a>
+                <a href="#" class="day">29 ноября</a>
+                <a href="#" class="day">30 ноября</a>
+            </div>
+            <div id="control-right"><i class="fas fa-chevron-right"></i></div>
+        </div>
         <div class="programs">
             <div class="program">
                 <img src="/img/akira.jpg" alt="">
