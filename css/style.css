@@ -21,6 +21,7 @@ body{
     flex-direction: column;
     max-width: 100vw;
 }
+/* ШАПКА НА ГЛАВНОЙ СТРАНИЦЕ */
 header.tv-header{
     display: flex;
     justify-content: space-between;
@@ -30,6 +31,7 @@ header.tv-header{
     color: #fff;
     height: 100px;
 }
+/* ШАПКА НА ВСЕХ СТРАНИЦАХ */
 header{
     display: flex;
     justify-content: space-between;
@@ -39,6 +41,7 @@ header{
     color: #fff;
     height: 100px;
 }
+/* ЛОГОТИП В ШАПКЕ */
 .logo{
     font-size: 24px;
     letter-spacing: .07em;
@@ -46,6 +49,7 @@ header{
     color: #fff;
     text-decoration: none;
 }
+/* МЕНЮ ШАПКИ */
 ul.menu{
     display: flex;
     align-items: center;
@@ -62,6 +66,8 @@ a.link-menu{
     text-decoration: none;
     color: #fff;
 }
+/* КОНЕЦ МЕНЮ ШАПКИ */
+/* ВСПЛЫВАЮЩЕЕ ОКНО - ВХОД */
 .popup{
     position: absolute;
     display: flex;
@@ -131,7 +137,8 @@ a.link-menu{
 .none{
     display: none;
 }
-
+/* КОНЕЦ ВСПЛЫВАЮЩЕГО ОКНА */
+/* ЗАГОЛОВОК В НАЧАЛЬНОЙ ИНТРО */
 .intro-title{
     align-self: center;
     color: #fff;
@@ -140,6 +147,7 @@ a.link-menu{
     line-height: 65%;
     text-shadow: 0 0 50px #000;
 }
+/* ВРЕМЯ В ИНТРО */
 .intro-time{
     align-self: center;
     margin-top: 100px;
@@ -155,7 +163,7 @@ a.link-menu{
     border: 7px solid #fff;
     box-shadow: 0 0 20px #000;
 }
-
+/* НАЗВАНИЕ РАЗДЕЛА */
 .title-section{
     width: 100%;
     height: 200px;
@@ -169,7 +177,7 @@ a.link-menu{
     background-color: #e7e7e7;
     box-shadow: 0 0 10px #0003;
 }
-/* РЕДАКТИРОВАТь */
+/* ЛИНИЯ ДНЕЙ */
 .day-line{
     height: 30px;
     margin-top: 35px;
@@ -180,6 +188,7 @@ a.link-menu{
     font-size: 24px;
     align-items: center;
 }
+/* ВСЕ ДНИ */
 .days{
     font-size: 18px;
     display: flex;
@@ -188,21 +197,24 @@ a.link-menu{
     width: 100%;
     justify-content: space-between;
 }
+/* ДЕНЬ */
 .day{
     text-decoration: none;
     color: #000
 }
+/* СЕГОДНЕШНИЙ ДЕНЬ */
 .day.now{
     color: #4211f5;
     font-weight: 900;
 }
-
+/* ТЕЛЕПРОГРАММЫ */
 .programs{
     padding: 0 15%;
     display: flex;
     flex-direction: column;
     margin-bottom: 100px;
 }
+/* ТЕЛЕПРОГРАММА */
 .program{
     height: 150px;
     width: 100%;
@@ -277,7 +289,7 @@ a.link-menu{
     background-color: #fff;
     padding: 0 5px;
 }
-
+/* РАЗДЕЛ НОВОСТИ */
 .news{
     display: flex;
     flex-wrap: wrap;
@@ -286,6 +298,7 @@ a.link-menu{
     justify-content: space-between;
     margin-bottom: 100px;
 }
+/* НОВОСТЬ */
 .tiding{
     display: flex;
     flex-direction: column;
@@ -316,6 +329,7 @@ a.link-menu{
     font-weight: 500;
     text-align: justify;
 }
+/* РАЗДЕЛ КОНТАКТЫ */
 .contacts{
     display: flex;
     padding: 25px;
@@ -324,6 +338,7 @@ a.link-menu{
     border-radius: 5px;
     justify-content: space-between;
 }
+/* КОЛОНКА ИНФО */
 .info{
     line-height: 1.5;
     width: 500px;
@@ -364,6 +379,7 @@ span.data{
 .soc .fb:hover{
     color: #3b5998;
 }
+/* КОЛОНКА ФОРМЫ ОБРАТНОЙ СВЯЗИ */
 .feedback{
     width: 500px;
     display: flex;
@@ -421,6 +437,7 @@ span.data{
     background-color: #e7e7e7;
     box-shadow: 0 0 10px #000 inset;
 }
+/* ПОДВАЛ */
 footer{
     width: 100%;
     height: 100px;
@@ -432,4 +449,17 @@ footer{
     font-size: 18px;
     font-weight: bold;
     margin: auto auto 0;
+}
+#btn-up{
+    position: fixed;
+    background-color: #000;
+    color: white;
+    font-size: 24px;
+    padding: 15px 18px;
+    border-radius: 5px;
+    right: 25px;
+    bottom: 25px;
+}
+#btn-up.done{
+    display: none;
 }
