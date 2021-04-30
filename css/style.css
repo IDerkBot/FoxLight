@@ -70,7 +70,7 @@ a.link-menu{
 }
 /* ВСПЛЫВАЮЩЕЕ ОКНО - ВХОД */
 .popup{
-    position: absolute;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,6 +79,7 @@ a.link-menu{
     background-color: #0006;
     top: 0;
     left: 0;
+    z-index: 999;
 }
 .popup form{
     position: relative;
