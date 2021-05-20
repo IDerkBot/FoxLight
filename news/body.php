@@ -8,7 +8,6 @@
             $authorData = $conn->query("SELECT login, nickname FROM `user` WHERE `id` = '$authorID'")->fetch_assoc();
             $authorLogin = $authorData['login'];
             $authorNickName = $authorData['nickname'];
-        
     ?>
         <a class="tiding" href="index.html">
             <img src="<?=$row['img']?>" alt="">

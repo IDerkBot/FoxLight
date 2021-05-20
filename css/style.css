@@ -464,7 +464,26 @@ span.data{
     font-weight: bold;
     text-decoration: none;
 }
-
+.btns{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    width: auto;
+    padding: 5px 25px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 3px;
+    font-weight: 300;
+}
+.btn.success{
+    background-color: #2ecc71;
+    color: #fff;
+}
+.btn.danger{
+    background-color: #e74c3c;
+    color: #fff;
+}
 /* ПОДВАЛ */
 footer{
     width: 100%;

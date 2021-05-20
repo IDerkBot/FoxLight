@@ -6,16 +6,28 @@
 <section>
     <div class="title-section"><span>Телепрограмма</span></div>
     <div class="day-line">
-        <div id="control-left"><i class="fas fa-chevron-left"></i></div>
+        <!-- <div id="control-left"><i class="fas fa-chevron-left"></i></div> -->
         <div class="days">
-            <a href="#" class="day now">25 ноября</a>
-            <a href="#" class="day">26 ноября</a>
-            <a href="#" class="day">27 ноября</a>
-            <a href="#" class="day">28 ноября</a>
-            <a href="#" class="day">29 ноября</a>
-            <a href="#" class="day">30 ноября</a>
+            <?
+                $dateNow = date("Y-m-d");
+                $date = new DateTime($dateNow);
+                $months = ['', 'Января', 'Февраля', 'Марта','Апреля','Мая','Июня','Июля','Августа','Сентября','Октября','Ноября', 'Декабря'];
+                for ($i=1; $i <= 3; $i++) {
+                    $date->modify('-1 day');
+                    $month = (int) $date->format('m');
+                    echo '<a href="#" class="day">' . $date->format('d') . ' ' . $months[$month] . '</a>';
+                }
+                $date = new DateTime($dateNow);
+                $month = (int) $date->format('m');
+                echo '<a href="#" class="day now">' . $date->format('d'). ' ' . $months[$month] . '</a>';
+                for ($i=1; $i <= 3; $i++) {
+                    $date->modify('+1 day');
+                    $month = (int) $date->format('m');
+                    echo '<a href="#" class="day">' . $date->format('d') . ' ' . $months[$month] . '</a>';
+                }
+            ?>
         </div>
-        <div id="control-right"><i class="fas fa-chevron-right"></i></div>
+        <!-- <div id="control-right"><i class="fas fa-chevron-right"></i></div> -->
     </div>
     <div class="programs">
         <div class="program">
